@@ -44,14 +44,6 @@ const MovieDetailsPage: React.FC<RouteComponentProps & IProps> = ({ location, hi
   const handleGoBack = () => {
     history.push(
       location?.state?.from?.state?.from || location?.state?.from || routes.home
-
-      //? alternative 
-      // if (location.state && location.state.from) {
-      //   history.push(location.state.from);
-      //   return;
-      // }
-
-      // history.push(routes.home);
     );
   };
 

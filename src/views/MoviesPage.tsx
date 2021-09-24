@@ -10,7 +10,7 @@ const MoviesView: React.FC<RouteComponentProps> = ({ history, location }) => {
   const [searchQuery, setSearchQuery] = useState("");
   const [movies, setMovies] = useState([]);
 
-  const fetchMovies = (query: string | string[]) => {
+  const fetchMovies = (query:string | string[]) => {
     moviesApi
       .getSearchMovies(query)
       .then((data) => setMovies(data))
